@@ -27,7 +27,7 @@ public abstract class algoritmos {
 	 * @param numero
 	 * @return el factorial del numero introducido
 	 */
-	 public static int factorial( int numero ) {
+	 public static long factorial( int numero ) {
 	      int fact = 1;
 	      for( int i = 1; i <= numero; i++ ) {
 	         fact *= i;
