@@ -22,4 +22,18 @@ public abstract class algoritmos {
 		}
 		return actual;
 	}
+	/**
+	 * Recibe un número entero y devuelve el factorial de dicho número.
+	 * @param numero
+	 * @return el factorial del numero introducido
+	 */
+	 public static int factorial( int numero ) {
+	      int fact = 1;
+	      for( int i = 1; i <= numero; i++ ) {
+	         fact *= i;
+	      }
+	 
+	      return fact;
+	 
+	}
 }
