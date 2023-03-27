@@ -36,4 +36,19 @@ public abstract class algoritmos {
 	      return fact;
 	 
 	}
+	 /**
+	  * Recibe un número entero y devuelve true o false en función de si es primo o no.
+	  * @param numero
+	  * @return true si el numero es primo y false si no lo es
+	  */
+	 public static boolean Primo(int numero) {
+		  if (numero == 0 || numero == 1 || numero == 4) {
+		    return false;
+		  }
+		  for (int x = 2; x < numero / 2; x++) {
+		    if (numero % x == 0)
+		      return false;
+		  }
+		  return true;
+		}
 }
