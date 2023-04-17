@@ -1,4 +1,7 @@
 package com.entornos.FernandoJesusFernandezTrujillo.arrays;
+
+import java.util.Arrays;
+
 /**
  * 
  * @author Fernando Jesus Fernandez Trujillo
@@ -18,6 +21,26 @@ public abstract class MisArrays {
 				suma=suma+array[i];
 			}
 			return suma/array.length;
+		}
+		/**
+		 * 
+		 * @param array entra un array como parametro
+		 * @return devuelve la mediana del array
+		 */
+		public static double mediana(int[] array) {
+			Arrays.sort(array);
+
+		    double result;
+
+		    if (array.length % 2 == 0) {
+		      int pos = (array.length - 2) / 2;
+		      result = (((array[pos] ) + array[pos + 1]) / 2);
+		    } else {
+		      int pos = (array.length - 1) / 2;
+		      result =array[pos];
+		    }
+
+		    return result;
 		}
 
 	}

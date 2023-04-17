@@ -14,13 +14,18 @@ class TestArrays {
 	void iniciar() {
 		array1 = new int[]{1,2,3,6,8};
 		array2 = new int[]{3,2,3,6,8};
-		array3 = new int[]{4,6,3,8,9};
+		array3 = new int[]{4,6,3,8,9,1};
 	}
 	@Test
 	void testMedia() {
 		assertEquals(4,Math.round(MisArrays.media(array1)));
 		assertEquals(4,Math.round(MisArrays.media(array2)));
-		assertEquals(6,Math.round(MisArrays.media(array3)));
+		assertEquals(5,Math.round(MisArrays.media(array3)));
 	}
-
+	@Test
+	void testMediana() {
+		assertEquals(3,MisArrays.mediana(array1));
+		assertEquals(3,MisArrays.mediana(array2));
+		assertEquals(5,MisArrays.mediana(array3));
+	}
 }
