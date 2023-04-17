@@ -57,6 +57,21 @@ public abstract class MisArrays {
 		        }
 		        return mayor;
 		}
+		/**
+		 * 
+		 * @param array introducimos un array
+		 * @return devuelve el numero menor del array
+		 */
+		public static int minimo(int[] array) {
+			int menor = array[0];
+			 
+	        for (int i = 1; i < array.length; i++) {
+	            if (array[i] < menor) {
+	                menor = array[i];
+	            }
+	        }
+	        return menor;
+		}
 
 	}
 

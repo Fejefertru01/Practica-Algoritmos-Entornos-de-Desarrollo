@@ -34,4 +34,10 @@ class TestArrays {
 		assertEquals(8,MisArrays.maximo(array2));
 		assertEquals(9,MisArrays.maximo(array3));
 	}
+	@Test
+	void testMinimo() {
+		assertEquals(1,MisArrays.minimo(array1));
+		assertEquals(2,MisArrays.minimo(array2));
+		assertEquals(1,MisArrays.minimo(array3));
+	}
 }
