@@ -42,6 +42,21 @@ public abstract class MisArrays {
 
 		    return result;
 		}
+		/**
+		 * 
+		 * @param array le entra un array como parametro
+		 * @return devuelve el numero mayor del array
+		 */
+		public static int maximo(int[] array) {
+			 int mayor = array[0];
+			 
+		        for (int i = 1; i < array.length; i++) {
+		            if (array[i] > mayor) {
+		                mayor = array[i];
+		            }
+		        }
+		        return mayor;
+		}
 
 	}
 
